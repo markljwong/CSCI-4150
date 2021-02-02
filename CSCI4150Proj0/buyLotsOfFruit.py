@@ -32,9 +32,9 @@ def buyLotsOfFruit(orderList):
     for order in orderList:
         # If price is unknown, print error message and return None
         if not order[0] in fruitPrices:
-            print('Price for ', order[0], ' does not exist in fruitPrices')
+            print 'Price for ', order[0], ' does not exist in fruitPrices'
             return None
-            
+
         # Otherwise, add the cost to total
         totalCost += order[1] * fruitPrices[order[0]]
 
@@ -44,4 +44,4 @@ def buyLotsOfFruit(orderList):
 if __name__ == '__main__':
     "This code runs when you invoke the script from the command line"
     orderList = [ ('apples', 2.0), ('pears', 3.0), ('limes', 4.0) ]
-    print ('Cost of', orderList, 'is', buyLotsOfFruit(orderList))
+    print 'Cost of', orderList, 'is', buyLotsOfFruit(orderList)
